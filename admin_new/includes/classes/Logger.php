@@ -49,6 +49,12 @@ class Logger {
                     "time" => $log_time))."\n";
                 fwrite($log, $message);
                 break;
+            case 'delete_multiple':
+                $message = json_encode(array(
+                    "message" => $this->user.': deleted '.$type,
+                    "time" => $log_time))."\n";
+                fwrite($log, $message);
+                break;
         }
         fclose($log);
     }
