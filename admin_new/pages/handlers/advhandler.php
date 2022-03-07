@@ -2,6 +2,8 @@
 include("../../includes/config.php");
 include("../../includes/classes/Advertisement.php");
 include("../../includes/classes/Constants.php");
+include("../../includes/classes/Logger.php");
+$log = new Logger($_SESSION["usertype"]);
 $obj = new Advertisement($cn);
 if($_SERVER['REQUEST_METHOD'] == "POST") {
     if(isset($_POST['name'])) {
@@ -36,6 +38,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
         $arr = json_decode($res);
         $tmp = (object)$arr;
         if($tmp->status == "success") {
+            $log->log_action('insert', $_SESSION["usertype"], 'advertisement');
             echo json_encode(array("status"=>"success"));
         } else if($tmp->status == "fail") {
             echo json_encode(array("status"=>"fail", "error" => $tmp->code));
@@ -61,6 +64,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
             }
         }
         if($flag) {
+            $log->log_action('delete_multiple', $_SESSION["usertype"], $sz.' advertisement(s).');
             echo json_encode(array("status" => "success"));
         } else {
             echo json_encode(array("status" => "fail", "error" => $errcode));
