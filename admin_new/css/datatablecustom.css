@@ -1,0 +1,21 @@
+.dataTables_wrapper .dataTables_filter {
+  margin-top: 10px;
+}
+table.dataTable tbody th, table.dataTable tbody td {
+  padding: 20px 30px;
+}
+table.dataTable tbody th, table.dataTable tbody td {
+  padding: 20px 30px;
+}
+.dataTables_wrapper .dataTable thead .sorting:before, .dataTables_wrapper .dataTable thead .sorting_asc:before, .dataTables_wrapper .dataTable thead .sorting_desc:before, .dataTables_wrapper .dataTable thead .sorting_asc_disabled:before, .dataTables_wrapper .dataTable thead .sorting_desc_disabled:before {
+  margin: 5px;
+}
+.dataTables_wrapper .dataTable thead .sorting:after, .dataTables_wrapper .dataTable thead .sorting_asc:after, .dataTables_wrapper .dataTable thead .sorting_desc:after, .dataTables_wrapper .dataTable thead .sorting_asc_disabled:after, .dataTables_wrapper .dataTable thead .sorting_desc_disabled:after {
+  margin: 5px;
+}
+div#myTable_paginate span a {
+  border-radius: 30%;
+  border: 1px solid #1f3bb3;
+  background: #1f3bb3;
+  color: #FFF !important;
+}
