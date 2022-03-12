@@ -7,12 +7,18 @@
 						</div>
 						<div class="menu">
 						<ul id="nav">
-							 <li><a href="index.php#section-1"  onclick="javascript:window.open('index.php#section-1','_self')">                            Home</a></li>
-							 <li><a href="index.php#section-2"  onclick="javascript:window.open('index.php#section-2','_self')">                           About</a></li>
-							 <li><a href="index.php#section-3"  onclick="javascript:window.open('index.php#section-3','_self')">                             Gallery</a></li>
-                        <li><a href="category.php" onclick="javascript:window.open('category.php','_self')">Category</a></li>                             
-							 <li><a href="index.php#section-4"   onclick="javascript:window.open('index.php#section-4','_self')">                            Advertisements</a></li>
-							 <li><a href="index.php#section-5"   onclick="javascript:window.open('index.php#section-5','_self')">                              Contact</a></li>
+							<li><a href="index.php#section-1"  onclick="javascript:window.open('index.php#section-1','_self')">Home</a></li>
+							<li><a href="index.php#section-2"  onclick="javascript:window.open('index.php#section-2','_self')">About</a></li>
+							<li><a href="index.php#section-3"  onclick="javascript:window.open('index.php#section-3','_self')">Gallery</a></li>
+							<li><a href="category.php" onclick="javascript:window.open('category.php','_self')">Category</a></li>
+							<li><a href="index.php#section-4" onclick="javascript:window.open('index.php#section-4','_self')">Advertisements</a></li>
+							<li><a href="index.php#section-5" onclick="javascript:window.open('index.php#section-5','_self')">Contact</a></li>
+							<li>
+								<div class="search_form">
+									<input type="text" id="search_inp" placeholder="search anything" title="type to search"/>
+								</div>
+								<div class="search_response"></div>
+							</li>
 							 <div class="clearfix"></div>
 						 </ul>
 						 </div>
