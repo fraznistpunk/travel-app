@@ -35,9 +35,14 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
         $arr = json_decode($res);
         $tmp = (object)$arr;
         if($tmp->status == "success") {
-            echo json_encode(array("status"=>"success"));
+            echo json_encode(array(
+                "status"=>"success",
+            ));
         } else if($tmp->status == "fail") {
-            echo json_encode(array("status"=>"fail", "error" => $tmp->code));
+            echo json_encode(array(
+                "status"=>"fail", 
+                "error" => $tmp->code)
+            );
         } else {
             echo json_encode(array("status"=>"already_exist"));
         }

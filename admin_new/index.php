@@ -36,6 +36,12 @@
   <link rel="stylesheet" href="css/vertical-layout-light/style.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="images/favicon.png" />
+  <style>
+    .qrylist {
+      text-align: -webkit-auto;
+      word-spacing: 5px;
+    }
+  </style>
 </head>
 <body>
   <div class="container-scroller">
@@ -319,9 +325,9 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-8 d-flex flex-column">
+                      <div class="col-lg-12 d-flex flex-column">
                         <div class="row flex-grow">
-                          <div class="col-md-6 col-lg-6 grid-margin stretch-card">
+                          <div class="col-md-4 col-lg-4 grid-margin stretch-card">
                             <div class="card card-rounded">
                               <div class="card-body card-rounded">
                                 <h4 class="card-title  card-title-dash">Recent Events</h4>
@@ -362,7 +368,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-md-6 col-lg-6 grid-margin">
+                          <div class="col-md-4 col-lg-4 grid-margin">
                             <div class="card card-rounded">
                               <div class="card-body">
                                 <div class="d-flex align-items-center justify-content-between mb-3">
@@ -410,6 +416,31 @@
                                     <div class="d-flex justify-content-between">
                                       <div><span class="text-light-green">Ben Tossell</span> assign you a task</div>
                                       <p>1h</p>
+                                    </div>
+                                  </li>
+                                </ul>
+                                <div class="list align-items-center pt-3">
+                                  <div class="wrapper w-100">
+                                    <p class="mb-0">
+                                      <a href="#" class="fw-bold text-primary">Show all <i class="mdi mdi-arrow-right ms-2"></i></a>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4 col-lg-4 grid-margin">
+                            <div class="card card-rounded">
+                              <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                  <h4 class="card-title card-title-dash">Queries</h4>
+                                  <p class="mb-0">3 approved, 7 pending</p>
+                                </div>
+                                <ul class="bullet-line-list qrylist">
+                                  <li>
+                                    <div class="d-flex justify-content-between">
+                                      <div><span class="text-light-green">user_name</span> queried for <span>package in afghanistan.</span></div>
+                                      <p>Just now</p>
                                     </div>
                                   </li>
                                 </ul>

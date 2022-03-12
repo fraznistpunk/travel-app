@@ -51,6 +51,26 @@ Our Customer Service Department is always happy to answer any questions you migh
 	<script src="js/jquery.nav.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
+		$(".search_response").css("display", "none");
+		$("#search_inp").on("keyup", function() {
+			// alert($(this).val());
+			var homesearch = $(this).val();
+			if(homesearch.length == 0 || homesearch.length == 1){
+				$(".search_response").css("display", "none");
+			} else {
+				$.ajax({
+					url: 'search.php',
+					type: 'POST',
+					data: {qry : homesearch},
+					success:function(data) {
+						// alert(data);
+						$(".search_response").css("display", "block");
+						// document.getElementById("search_response").innerHTML = data;
+						$(".search_response").html(data);
+					}
+				});
+			}
+		});
 		$('#nav').onePageNav({
 			begin: function() {
 			console.log('start')

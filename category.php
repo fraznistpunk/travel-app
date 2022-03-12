@@ -50,7 +50,7 @@
 
 <div class="cat_main_txt">
 	<table>
-	<tr><td class="headingText">Welcome to My Tour</td></tr>
+	<tr><h5 class="headingText">Welcome to My Tour</h5></tr>
 	<tr>
 		<td class="paraText" width="900px">
 			<p>Plan and Book Your Perfect Trip.Create your dream holiday.

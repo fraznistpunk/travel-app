@@ -77,7 +77,7 @@
             <span><strong>Package/Location:</strong></span>
         </td>
         <td>
-            <?php echo $data[1];?>
+            <b><?=$data[1];?></b>
         </td>
     </tr>
         <tr>
@@ -101,8 +101,8 @@
                 <span><strong>Price:</strong></span> 
             </td>
             <td>
-                <?php echo number_format($data[4], 0, '.', ',')." ₹";?>
-                + GST(18%) inclusive*
+                <b><?php echo number_format($data[4], 0, '.', ',')." ₹";?></b>
+                <small class="text-muted">+ GST(18%) inclusive<span style="color: red">*</span></small>
             </td> 
         </tr>
     <tr><td colspan="3"><p><?php echo $data[8];?></p></td></tr> 

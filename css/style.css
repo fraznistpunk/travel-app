@@ -210,7 +210,7 @@ border:1px solid #60B0E6;
 	text-decoration: none;
 	height: 61px;
 	width: 41px;
-	background: transparent url("../images/themes.png") no-repeat left top;
+	/* background: transparent url("../images/t1.jpg") no-repeat left top; */
 	margin-top: -65px;
 }
 .callbacks_nav:active {
@@ -1709,4 +1709,17 @@ span.cat_type {
 	padding: 0.3em;
 	border-radius: 25px;
 	color: #FFF;
+}
+input#search_inp {
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid #60b2e7;
+	outline: none;
+}
+.search_response {
+	border: 1px solid #41c0b0;
+	background: #FFF;
+    position: absolute;
+    overflow-y: scroll;
+    max-height: 200px;
 }
