@@ -7,7 +7,8 @@
     }
     #owl-demo .item img{
         display: block;
-        height: auto;
+        height: 200px;
+    	width: 280px;
     }
 
 .owl-theme .owl-controls{
