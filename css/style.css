@@ -1,11 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap');
-body{
+body {
 	margin:0;
 	padding:0;
 	background: #f4f5f7;
 	-webkit-appearance: none;
 	font-family: 'Open Sans', sans-serif;
 }
+::-webkit-scrollbar {
+  width: 12px;          /* width of the entire scrollbar */
+  margin: 10px 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+}
+
 body a {
   transition:0.5s all;
 	-webkit-transition:0.5s all;
